@@ -6,7 +6,7 @@
 /*   By: schaaban <schaaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 10:24:21 by schaaban          #+#    #+#             */
-/*   Updated: 2018/02/17 15:39:01 by schaaban         ###   ########.fr       */
+/*   Updated: 2018/02/18 20:10:06 by schaaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int					get_next_line(const int fd, char **line);
 
 void				ft_a2ddel(void ***array);
 void				ft_bzero(void *s, size_t n);
-void				ft_freef(const char *format, ...);
+void				ft_del(const char *format, ...);
 void				ft_memdel(void **ap);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));

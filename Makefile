@@ -6,7 +6,7 @@
 #    By: schaaban <schaaban@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/02 12:08:41 by schaaban          #+#    #+#              #
-#    Updated: 2018/02/17 16:51:44 by schaaban         ###   ########.fr        #
+#    Updated: 2018/02/18 20:10:28 by schaaban         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ SRCS		=	$(addprefix $(SRCS_DIR)/, 	\
 				ft_atoi.c					\
 				ft_bounds.c					\
 				ft_bzero.c					\
+				ft_del.c					\
 				ft_isalnum.c				\
 				ft_isalpha.c				\
 				ft_isascii.c				\

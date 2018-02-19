@@ -6,11 +6,12 @@
 /*   By: schaaban <schaaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/19 14:27:41 by schaaban          #+#    #+#             */
-/*   Updated: 2018/01/25 12:56:14 by schaaban         ###   ########.fr       */
+/*   Updated: 2018/02/19 08:47:58 by schaaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 void	ft_a2ddel(void ***array)
 {
@@ -21,10 +22,11 @@ void	ft_a2ddel(void ***array)
 		return ;
 	while ((*array)[i] != NULL)
 	{
-		ft_memdel((void**)&(*array)[i]);
+		free((*array)[i]);
+		(*array)[i] = NULL;
 		i++;
 	}
-	ft_memdel((void**)array);
+	free(*array);
 	*array = NULL;
 	return ;
 }

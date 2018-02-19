@@ -6,7 +6,7 @@
 /*   By: schaaban <schaaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/09 10:01:29 by schaaban          #+#    #+#             */
-/*   Updated: 2017/11/15 13:24:05 by schaaban         ###   ########.fr       */
+/*   Updated: 2018/02/19 08:44:27 by schaaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_memdel(void **ap)
 {
-	if (ap != NULL)
+	if (ap && *ap)
 	{
 		free(*ap);
 		*ap = NULL;
